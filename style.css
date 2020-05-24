@@ -8,6 +8,7 @@ nav{
    justify-content: space-around;
    justify-items: center;
    background-color: white;
+   height: 10vh;
    align-items: center;
    height: 50px;
    padding-top: 1rem;
@@ -51,6 +52,24 @@ nav input:hover{
     border: 2px solid hsl(0, 94%, 66%);
     box-shadow: none;
 }
+
+
+
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px;
+}
+
+
+
+
 
 .midcont{
     display: flex;
@@ -360,19 +379,32 @@ nav input:hover{
     font-size: 1rem;
     letter-spacing: 0.2rem;
     padding-bottom: 1.5rem;
+    color: white;
 }
 .cont3 h2{
     font-size: 2rem;
     padding-bottom: 1.5rem;
+    color: white;
     /* letter-spacing: 0.2rem; */
 }
 
 .cont3 input[type="email"]{
-    width: 290px;
+    width: 250px;
     height: 45px;
     border-radius: 5px;
     border: 1px solid gray;
+    /* position: absolute; */
 }
+
+.subcont3 img{
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 220px;
+    /* padding-right: 100px; */
+    display: none;
+} 
+
+
 .cont3 input[type="email"]::placeholder{
   padding-left: 1rem;
 }
@@ -574,3 +606,558 @@ nav input:hover{
      }
     
  }
+
+
+ @media screen and (max-width:480px) {
+
+    nav ul {
+        position: absolute;
+        /* right: 10%; */
+        height: 40vh;
+        top: 10vh;
+        width: 100%;
+        background-color: hsl(229, 31%, 21%);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transform: translateY(-150%);
+        transition: transform 1s ease-in;
+        overflow: hidden;
+    }
+    nav ul li a {
+        color: white;
+    }
+
+    nav input{
+        background-color: hsl(229, 31%, 21%);
+        color:white;
+        border: 2px solid white;
+        box-shadow: none;
+        width: 80%;
+    }
+    
+    .burger {
+        display: block;
+    }
+
+
+    .midcont{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        /* margin-top: 5%; */
+    }
+
+    .content{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+    .image{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .cont1{
+        margin: 0 auto;
+        margin-top: 10%;
+        text-align: center;
+        width: 90%;
+    }
+
+    .cont2{
+        margin-top: 5%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        margin-bottom: 1rem;
+    }
+    .cont2 ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: none;
+     }
+     .cont2 ul li{
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-top: 1rem;
+        width: 100%;
+        padding-bottom: 0.5rem;
+     }
+
+     .subcont2{
+        display: flex;
+        flex-direction: column!important;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+
+
+    .image1{
+        width: 90%;
+    }
+    .image1 img{
+        width: 100%;
+    }
+
+    .content1{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .speedy{
+        display: none;
+    }
+    .easy{
+        display: none;
+    }
+
+
+
+
+    .maincard{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-top: 5%;
+    }
+    .card{
+        margin-bottom: 10%;
+        margin: 0 auto;
+        width: 100%;
+        /* justify-content: center; */
+    }
+    .card1{
+        margin-right: 0rem;
+        /* margin-top: 5%; */
+    }
+    
+    .card2{
+        margin-top: 5%;
+        margin-right: 0rem;
+    }
+    
+    .card3{
+        margin-top: 5%;
+        margin-right: 0rem;
+    }
+
+
+
+    .quest{
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    .subcont3{
+        width: 85%;
+    }
+    .cont3 h2{
+        font-size: 1.5rem;
+    }
+    .cont3 h6{
+       padding-bottom: 0;
+    }
+    
+    .cont3 input[type="email"]{
+        width: 90%;
+    }
+    .cont3 input[type="email"]::placeholder{
+      padding-left: 1rem;
+    }
+    .cont3 input[type="submit"]{
+        width: 90%;
+    }
+
+
+    .nav{
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 0.7rem;
+     }
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+
+
+    .nav ul li{
+        padding-top: 1rem;
+    }
+
+    /* 
+    .content h2{
+        padding-top: 22%;
+        font-size: 2.8rem;
+        padding-bottom: 1.1rem;
+    }
+    .content p{
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+        padding-bottom: 1.7rem;
+        color: hsl(229, 8%, 60%);
+    }
+    .content input{
+        width:150px;
+        height: 45px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .chrome{
+        background-color: hsl(231, 69%, 60%);
+        margin-right: 1rem;
+        border: none;
+    }
+    .chrome:hover{
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+    .firefox{
+        color: hsl(229, 31%, 21%)!important;
+        box-shadow: 0.5px 3px 2px 2px hsl(240, 2%, 64%);
+        background-color: white;
+    }
+    .firefox:hover{
+        background-color: white;
+        color: hsl(229, 31%, 21%);
+        border: 2px solid hsl(229, 31%, 21%);
+        box-shadow: none;
+    }
+    
+    
+    .cont1{
+        margin: 0 auto;
+        margin-top: 5%;
+        text-align: center;
+        width: 43%;
+    }
+    .cont1 h3{
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      line-height: 1.6rem;
+    }
+    .cont1 p{
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+        color: hsl(229, 8%, 60%);
+      }
+    
+    
+    .cont2{
+        margin-top: 5%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        margin-bottom: 1rem;
+    }
+    .cont2 ul{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+        text-transform: uppercase;
+     }
+    .cont2 ul li{
+        list-style: none;
+     }
+     .cont2 ul li a{
+        text-decoration: none;
+        color: black;
+     }
+    
+    .cont2 ul li a:hover{
+        color: hsl(0, 94%, 66%);
+     }
+    
+    .border{
+        border-bottom: 3px solid hsl(0, 94%, 66%);
+        padding-bottom: 1.2rem;
+    }
+    
+    .content1 h2{
+        padding-top: 13%;
+        font-size: 2rem;
+        padding-bottom: 1.1rem;
+    }
+    .content1 p{
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+        padding-bottom: 1.7rem;
+        color: hsl(229, 8%, 60%);
+    }
+    .content1 input{
+        width:120px;
+        height: 45px;
+        border: none;
+        color: white;
+        background-color: hsl(231, 69%, 60%);
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .content1 input:hover{
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+    
+   
+    
+    
+    
+    
+    .maincard{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        width: 65%;
+        margin-top: 5%;
+    }
+    .card{
+        margin-bottom: 10%;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        height: 300px;
+        padding-bottom: 1.2rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 10px 5px 1px hsl(229, 8%, 60%);
+    }
+    
+    .card2{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        height: 300px;
+        padding-bottom: 1.2rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 10px 5px 1px hsl(229, 8%, 60%);
+    }
+    
+    .card3{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1.2rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 10px 5px 1px hsl(229, 8%, 60%);
+    }
+    
+    .card img{
+        padding-bottom: 1rem;
+    }
+    .card h2{
+        padding-bottom: 0.7rem;
+    }
+    .card p{
+        padding-bottom: 1.5rem;
+    }
+    .card input{
+        width:80%;
+        height: 45px;
+        border: none;
+        color: white;
+        background-color: hsl(231, 69%, 60%);
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .card input:hover{
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+    
+    .quest{
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 40%;
+    }
+    .quest h6 a{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+    }
+    .quest h6 a:hover{
+        color:hsl(0, 94%, 66%);
+    }
+    .quest h6{
+       font-size: 1.2rem;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       padding-right: 1rem;
+       border-top: 1px solid black;
+    }
+    .quest p{
+       padding-bottom: 1rem;
+       padding-top: 1rem;
+       display: none;
+    }
+    
+    .quest input{
+        margin: 0 auto;
+        margin-top: 5%;
+        display: block;
+        width:120px;
+        height: 45px;
+        border: none;
+        color: white;
+        background-color: hsl(231, 69%, 60%);
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;   
+    }
+    
+    .quest input:hover{
+        background-color: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+    
+    .cont3{
+        text-align: center;
+        margin-top: 10%;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        height: 200px;
+        background-color: hsl(231, 69%, 60%);
+    }
+    .subcont3{
+        width: 35%;
+        margin: 0 auto;
+    }
+    .cont3 h6{
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        padding-bottom: 1.5rem;
+    }
+    .cont3 h2{
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .cont3 input[type="email"]{
+        width: 290px;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    .cont3 input[type="email"]::placeholder{
+      padding-left: 1rem;
+    }
+    .cont3 input[type="submit"]{
+        width: 100px;
+        height: 45px;
+        border: none;
+        background-color: hsl(0, 94%, 66%);
+        color: white;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .cont3 input[type="submit"]:hover{
+        background-color: white;
+        color:hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+        box-shadow: none;
+        padding: 5px;
+    }
+    
+    
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        background-color: hsl(229, 31%, 21%);
+        align-items: center;
+        height: 50px;
+        padding-top: 1rem;
+        padding-bottom: 0.7rem;
+     }
+    .nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 35%;
+        text-transform: uppercase;
+     }
+    .nav ul li{
+        list-style: none;
+     }
+    .nav ul li a{
+        text-decoration: none;
+        color: white;
+     }
+     
+    .nav ul li a:hover{
+         color: hsl(0, 94%, 66%);
+      } */
+ }
+
+
+
+
+
+
+
+
+ .nav-active {
+    transform: translateY(0%);
+}
+
+.toggle .box1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .box2 {
+    opacity: 0;
+}
+
+.toggle .box3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.fade{
+    background-color: rgb(105, 105, 105,0.5);
+}

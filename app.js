@@ -8,6 +8,14 @@ var li3  = document.querySelector('.li3');
 
 var arrow = document.querySelectorAll('.quest h6');
 
+
+
+var imgerr = document.querySelector('.subcont3 img');
+var email = document.querySelector('.cont3 input[type="email"]').value;
+var btn = document.querySelector('.cont3 input[type="submit"]');
+
+
+
 var bookmark = document.querySelector('#bookmark a');
 var bookmarkPara = document.querySelector('.quest .bookmark');
 
@@ -88,3 +96,46 @@ chrom.addEventListener('click', function(){
 //         console.log('click')
 //     })
 // }
+
+
+
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    // const nav = document.querySelector('.nav-links');
+    const nav = document.querySelector('nav ul');
+    const midcont = document.querySelector('.midcont');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+    })
+}
+
+navSlide();
+
+
+
+
+
+
+
+
+
+
+
+
+btn.addEventListener('click', function(){
+    if (email == null || email == "") {
+        console.log("clicked");
+        console.log(email);
+        imgerr.style.display = 'block';
+    }else{
+        imgerr.style.display = 'none';
+    }
+})
+function removeWarning() {
+    imgerr.style.display = 'none';
+    // document.getElementById(this.id + "_error").innerHTML = "";
+}
+document.getElementById("email").onkeyup = removeWarning;
