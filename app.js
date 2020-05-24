@@ -91,18 +91,12 @@ chrom.addEventListener('click', function(){
     chromPara.style.display = 'block';
 })
 
-// for(i=0;i<arrow.length;i++){
-//     arrow[i].addEventListener('click', function(){
-//         console.log('click')
-//     })
-// }
 
 
 
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
-    // const nav = document.querySelector('.nav-links');
     const nav = document.querySelector('nav ul');
     const midcont = document.querySelector('.midcont');
 
@@ -130,12 +124,11 @@ btn.addEventListener('click', function(){
         console.log("clicked");
         console.log(email);
         imgerr.style.display = 'block';
-    }else{
+    }else if(email !== null || email == ""){
         imgerr.style.display = 'none';
     }
 })
 function removeWarning() {
     imgerr.style.display = 'none';
-    // document.getElementById(this.id + "_error").innerHTML = "";
 }
 document.getElementById("email").onkeyup = removeWarning;
